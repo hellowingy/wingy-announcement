@@ -7,6 +7,7 @@
 - [加入 Telegram 讨论组](https://telegram.me/WingyAnnouncement) 
 - [Twitter](https://twitter.com/HelloWingy)
 - [BUG请通过Issues提交](https://github.com/hellowingy/wingy-announcement/issues)
+- [申请TestFlight](https://t.co/v1SEDoLlOt)
 
 
 ## Recommend
