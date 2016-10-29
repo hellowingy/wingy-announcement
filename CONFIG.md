@@ -1,6 +1,6 @@
 # 自定义配置
 ## 前言
-Wingy基于[NEKit](https://github.com/zhuhaow/NEKit)开发，同样，自定义配置也遵循其规范，可参考 [SpechtLite](https://github.com/zhuhaow/SpechtLite) 
+Wingy基于 [NEKit](https://github.com/zhuhaow/NEKit) 开发，同样，自定义配置也遵循其 V2 版本规范，可参考基于 V1 版本规范的 [SpechtLite](https://github.com/zhuhaow/SpechtLite) 
 ##语法
 自定义配置使用YAML标准格式，通过 [YAML官网](http://www.yaml.org/) 或 [docs.ansible.com](http://docs.ansible.com/ansible/YAMLSyntax.html) 了解语法
 
@@ -22,6 +22,7 @@ rule 和 adapter 是自定义配置的两个核心概念：rule表示规则，�
 一个自定义配置的框架如下：
 
 ```
+version:2
 adapter:
  - id: adapter1
    ...
@@ -29,12 +30,22 @@ adapter:
    ...
 rule:
  - type: list
-   adapter: direct1
+   adapter: adapter1
    ...
  - type: country
-   adapter: direct2
+   adapter: adapter2
    ...
 ```
+##Version说明
+每个自定义规则必须声明格式版本，如果不声明将被默认为 V1 版本格式
+>由于Wingy基于V2版本运行，请务必声明 version 为 2
+
+```
+version:2
+
+```
+
+
 ##Adapter详解
 Wingy支持以下几个类型的Adapter
 ####HTTP
@@ -67,8 +78,8 @@ SS代理
    type: ss
    host: ss.host
    port: 1024
-   method: AES-128-CFB #是否为HTTPS代理，默认false
-   password: ss_password #可选，是否需要身份验证
+   method: AES-128-CFB
+   password: ss_password
 ```
 ####Speed
 speed用于选择最快连接成功的线路，
@@ -163,6 +174,7 @@ DNS解析错误的时候匹配
 这是最简单的一个自定义规则
 
 ```
+version:2
 adapter:
  - id: ss_proxy
    type: ss
@@ -180,6 +192,7 @@ rule:
 
 
 ```
+version:2
 adapter:
  - id: tokyo_ss_proxy
    type: ss
