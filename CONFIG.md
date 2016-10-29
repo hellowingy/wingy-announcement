@@ -233,3 +233,7 @@ rule:
  - type: all
    adapter: hk_https_proxy
 ```
+##自定义配置模板
+感谢以下朋友分享配置模板，也欢迎更多朋友分享
+
+*  [@kimanlo](https://github.com/kimanlo/WingyConfig)
