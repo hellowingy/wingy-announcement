@@ -29,7 +29,7 @@ adapter:
  - id: adapter2
    ...
 rule:
- - type: list
+ - type: iplist
    adapter: adapter1
    ...
  - type: country
@@ -147,7 +147,7 @@ reject会抛弃网络请求
 >由于iOS不方便多文件，标准格式中的file列表暂时没有被支持
 
 ```
- - type: domainlist
+ - type: iplist
    criteria:
     - 127.0.0.0/8
     - 192.168.0.0/16
