@@ -16,12 +16,8 @@ Mac用户推荐使用 [Specht](https://github.com/zhuhaow/SpechtLite)
 
 ## Supported Proxy 
 
-[Shadowsocks](https://shadowsocks.org) ~~Http~~ ~~Https~~ ~~Socks5~~
+[Shadowsocks](https://shadowsocks.org) Http Https Socks5
 
 ## Todo-List
-- Today Widget 快捷开关不打开APP
-- 开放Http Https Socks5 代理支持
-- 支持自定义规则，参见 [Specht](https://github.com/zhuhaow/SpechtLite) 
+- Bug Fix
 - 支持远程自定义规则（每次启动通过Url更新）
-- iPad 适配
-
