@@ -237,3 +237,4 @@ rule:
 感谢以下朋友分享配置模板，也欢迎更多朋友分享
 
 *  [@kimanlo](https://github.com/kimanlo/WingyConfig)
+*  [Wingy 内置代理规则](https://github.com/hellowingy/wingy-announcement/blob/master/Smart.conf)
