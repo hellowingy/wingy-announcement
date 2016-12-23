@@ -81,6 +81,9 @@ SS代理
    port: 1024
    method: AES-128-CFB
    password: ss_password
+   protocol: origin #可选 origin(无) verify_sha1(OTA)
+   obfs: origin #可选 origin(无) http_simple tls1.2_ticket_auth
+   obfs_param: ""
 ```
 ####Speed
 speed用于选择最快连接成功的线路，
